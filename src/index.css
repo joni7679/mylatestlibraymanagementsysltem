@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.error {
+    color: rgb(232, 40, 40);
+}
+
+
+
+.right-part::-webkit-scrollbar {
+    display: none;
+}

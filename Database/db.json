@@ -1,0 +1,436 @@
+{
+  "books": [
+    {
+      "id": "bk101",
+      "title": "SELLING IS NOT CHEATING: Sales is Strategy, Skills, Pricing, Marketing, and Ethics",
+      "description": "Selling is solving problems, not just persuasion. Learn how proper sales strategies make or break a business...",
+      "category": "Business",
+      "price": "355",
+      "language": "English & Bengali",
+      "img_link": "https://m.media-amazon.com/images/I/61Nv2KcpPgL._SY425_.jpg",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "review": [
+        {
+          "name": "Suborna Halder",
+          "title": "Student",
+          "email": "joni.ghosh@example.com",
+          "date": "2024-08-10",
+          "rtitle": "Life Changing",
+          "comment": "After reading this, I implemented small habits and my life changed.",
+          "reaction": {
+            "like": 120,
+            "love": 95,
+            "dislike": 2,
+            "funny": 5
+          },
+          "image": "https://randomuser.me/api/portraits/women/24.jpg"
+        },
+        {
+          "name": "Sourav Das",
+          "title": "Marketing Intern",
+          "email": "sourav.ghosh@example.com",
+          "date": "2024-08-10",
+          "rtitle": "Life Changing",
+          "comment": "This book changed how I look at sales — it's not manipulation, it's problem-solving with heart..",
+          "reaction": {
+            "like": 120,
+            "love": 95,
+            "dislike": 2,
+            "funny": 5
+          },
+          "author": "Amit Agarwal",
+          "publisher": "Liberty Publications",
+          "publish_year": "2022",
+          "copies_available": 12,
+          "isbn": "9789389931603",
+          "pages": 220,
+          "format": "Paperback",
+          "image": "https://randomuser.me/api/portraits/women/26.jpg"
+        },
+        {
+          "name": "Meena Khatun",
+          "title": "Commerce Student",
+          "email": "Meena.Khatun@example.com",
+          "date": "2024-08-10",
+          "rtitle": "Life Changing",
+          "comment": "Loved how clearly the book explains pricing psychology. Made it easy for a student like me!",
+          "reaction": {
+            "like": 120,
+            "love": 95,
+            "dislike": 2,
+            "funny": 5
+          },
+          "image": "https://randomuser.me/api/portraits/women/26.jpg"
+        },
+        {
+          "name": "Priya Saha",
+          "title": "Small Business Owner",
+          "email": "arjun.roy@example.com",
+          "date": "2024-07-22",
+          "rtitle": "Best Habit Book",
+          "comment": "The best book I’ve read on habits. Very practical and easy to follow.",
+          "reaction": {
+            "like": 210,
+            "love": 130,
+            "dislike": 0,
+            "funny": 3
+          },
+          "image": "https://randomuser.me/api/portraits/men/1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "bk102",
+      "title": "Think and Grow Rich",
+      "description": "Napoleon Hill's classic on how mindset and persistence can lead to financial success.",
+      "category": "Self Help",
+      "price": "299",
+      "language": "English",
+      "img_link": "https://media.licdn.com/dms/image/v2/D4E12AQF1tHNx024rBA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1653461743981?e=2147483647&v=beta&t=V_phnHXd9lzy8CRHTzfULIA3oJK94XK48KNBy-0LhgY",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "review": [
+        {
+          "name": "Riya Ghosh",
+          "title": "Student",
+          "email": "riya.ghosh@example.com",
+          "date": "2024-08-10",
+          "rtitle": "Life Changing",
+          "comment": "After reading this, I implemented small habits and my life changed.",
+          "reaction": {
+            "like": 120,
+            "love": 95,
+            "dislike": 2,
+            "funny": 5
+          },
+          "image": "https://randomuser.me/api/portraits/women/45.jpg"
+        },
+        {
+          "name": "Arjun Roy",
+          "title": "Software Engineer",
+          "email": "arjun.roy@example.com",
+          "date": "2024-07-22",
+          "rtitle": "Best Habit Book",
+          "comment": "The best book I’ve read on habits. Very practical and easy to follow.",
+          "reaction": {
+            "like": 210,
+            "love": 130,
+            "dislike": 0,
+            "funny": 3
+          },
+          "image": "https://randomuser.me/api/portraits/men/23.jpg"
+        }
+      ]
+    },
+    {
+      "id": "bk103",
+      "title": "Atomic Habits",
+      "description": "Learn how small habits lead to big changes. James Clear offers a scientific approach to habit formation.",
+      "category": "Productivity",
+      "price": "399",
+      "language": "English",
+      "img_link": "https://m.media-amazon.com/images/I/91bYsX41DVL._SY425_.jpg",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "review": [
+        {
+          "name": "Riya Ghosh",
+          "title": "Student",
+          "email": "riya.ghosh@example.com",
+          "date": "2024-08-10",
+          "rtitle": "Life Changing",
+          "comment": "After reading this, I implemented small habits and my life changed.",
+          "reaction": {
+            "like": 120,
+            "love": 95,
+            "dislike": 2,
+            "funny": 5
+          },
+          "image": "https://randomuser.me/api/portraits/women/45.jpg"
+        },
+        {
+          "name": "Arjun Roy",
+          "title": "Software Engineer",
+          "email": "arjun.roy@example.com",
+          "date": "2024-07-22",
+          "rtitle": "Best Habit Book",
+          "comment": "The best book I’ve read on habits. Very practical and easy to follow.",
+          "reaction": {
+            "like": 210,
+            "love": 130,
+            "dislike": 0,
+            "funny": 3
+          },
+          "image": "https://randomuser.me/api/portraits/men/23.jpg"
+        }
+      ]
+    },
+    {
+      "id": "48e2",
+      "title": "Don't Sell Make them Buy : Upgrade Your Selling Skills",
+      "description": "A must-read for all those looking to be successful in selling and negotiating. Selling is a skill. Salespeople must learn to be flexible and focus on skill development rather than making sales a step-by-step process or a tool. There is no one-size-fits-all approach to the task, and rigid and scripted interactions are likely to put off the customer. Selling skills need to keep pace with consumerism traits. Salespeople have to understand consumer needs better and build relationships with customers faster, more so in the post-Covid world. In Don’t Sell, Make Them Buy, R. Mukund, an industry expert who has spent over twenty years in sales and customer service training, helps readers understand human interactions from a salesperson’s perspective. Every sales call, he says, is a challenge to test a salesperson’s skills.With his vast range of experience, he provides effective strategies to make selling to customers an enjoyable and easy experience. The extensive case studies and real-life sales situations the author narrates are guaranteed to help readers develop unique methods to sharpen their selling skills.This is an essential guide for all those keen on creating long-lasting relationships with their customers as well as experts looking to upskill their selling and negotiating skills.",
+      "catagory": "Business",
+      "price": "400",
+      "language": "English",
+      "img_link": "https://m.media-amazon.com/images/I/71HvAZf2tUL._SY425_.jpg",
+      "buy_link": "https://www.amazon.in/Dont-Sell-Make-them-Buy/dp/9392834713/ref=sr_1_7?dib=eyJ2IjoiMSJ9.N-SrVnbpjdSJHyIc7_Zmf8medY5TgVVACAbhcFTFrqgv2lP8M5rd0VK5uKzNuJJCdA0CfE312jYFe35O3Ymi2wzXhccMnRZG1EmEyqD62dLmqW9qozJhL0WuakWa0CHuWSDXu6zFUr0fgndxqJAywQ6mSchDClSOQUNSC8_RMEFgBV_rJvlYghmZJHutu8gFAJwd5NzaRTES-bfBA7Q3Y_3SMX4AB1_4TvO9Hwq0VdI.C-occ_EbR_ts3h4pPuN1zw7i711lPXQGPVvotvJHCbM&dib_tag=se&keywords=best+business+books&qid=1737394497&sr=8-7",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "review": []
+    },
+    {
+      "id": "2794",
+      "title": "What I Learned About Investing from Darwin",
+      "description": "The investment profession is in a state of crisis. The vast majority of equity fund managers are unable to beat the market over the long term, which has led to massive outflows from active funds to passive funds. Where should investors turn in search of a new approach?\n\nPulak Prasad offers a philosophy of patient long-term investing based on an unexpected source: evolutionary biology. He draws key lessons from core Darwinian concepts, mixing vivid examples from the natural world with compelling stories of good and bad investing decisions―including his own. How can bumblebees’ survival strategies help us accept that we might miss out on Tesla? What does an experiment in breeding tame foxes reveal about the traits of successful businesses? Why might a small frog’s mimicry of the croak of a larger rival shed light on the signs of corporate dishonesty?\n\nInformed by successful evolutionary strategies, Prasad outlines his counterintuitive principles for long-term gain. He provides three mantras of investing: Avoid big risks; buy high quality at a fair price; and don’t be lazy―be very lazy. Prasad makes a persuasive case for a strategy that rules out the vast majority of investment opportunities and advocates permanently owning high-quality businesses.\n\nCombining punchy prose and practical insight, What I Learned About Investing from Darwin reveals why evolutionary biology can help fund managers become better at their craft.",
+      "catagory": "Business",
+      "price": "493",
+      "language": "English",
+      "img_link": "https://m.media-amazon.com/images/I/4140k5nim1L._SY445_SX342_.jpg",
+      "buy_link": "https://www.amazon.in/What-Learned-About-Investing-Darw/dp/0231213506/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.cd33fa60-47cd-49f3-80b8-24b1f0cbef97%3Aamzn1.sym.cd33fa60-47cd-49f3-80b8-24b1f0cbef97&cv_ct_cx=best+business+books&keywords=best+business+books&pd_rd_i=0231213506&pd_rd_r=478e352e-45cf-4da3-952a-ec8f67f67616&pd_rd_w=xLKRj&pd_rd_wg=fABmy&pf_rd_p=cd33fa60-47cd-49f3-80b8-24b1f0cbef97&pf_rd_r=A3JEJQ7APSEZTRJN4VAJ&qid=1737394766&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-ced4eeeb-b190-41d6-902a-1ecb3fb8b7c4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "review": []
+    },
+    {
+      "id": "a46c",
+      "title": "Story books : 365 Stories from Around the World (Illustrated stories for Children) (365 Series)",
+      "description": "Do you often catch yourself daydreaming about what it would be like to live in a foreign land or in another era? If you have, this is the perfect book for you-right from the barren sands of Arabia to the icy cold polar regions of Antarctica- there's a story here from everywhere for everyone! Go on, open this book and travel all over the world without getting off your couch!.",
+      "catagory": "Kids",
+      "price": "499",
+      "language": "English",
+      "img_link": "https://m.media-amazon.com/images/I/81gwBIIQhEL._SY425_.jpg",
+      "buy_link": "https://www.amazon.in/365-Stories-Around-World-House/dp/9381607494/ref=sr_1_1_sspa?adgrpid=59714592175&dib=eyJ2IjoiMSJ9.4FOFN9Ok-fKndOnMC0Vm0RaUQqxOjQH4y73GCqhmiOtJI6Kxn41ntaolPhtFgX5lA7LZdhE1jocDv1J9990sloMc58MLqqQlt1Qym1q8ngY5R02z8CvqeVJSrVnf_7ztYB3mftetRdZShdtsqU36BAz12FDbx38omG-v4ekb2w0atDfV1E5UN4tE1O1TdUcqwAxdsOf7AxppMGnBfQ8y0ZGh3AwyW4yllbWE3VLivgM.mWix6wCIoJC79Od8AzsZM5Pwu1yo6cHTzg5WJxYZSi4&dib_tag=se&ext_vrnc=hi&hvadid=297044673507&hvdev=c&hvlocphy=9061812&hvnetw=g&hvqmt=e&hvrand=1900126280601147221&hvtargid=kwd-854073957050&hydadcr=24926_1725244&keywords=story+books+for+kids+amazon&mcid=f3665f5896d035ad812f8354ab2ff6eb&qid=1737395165&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "review": []
+    },
+    {
+      "id": "845d",
+      "title": "Things I Can't See by SAM & MI: Unique Book for Kids on Empathy, Help Kids Recognize Emotions & Feelings, Story Books for 3+ Year Old Children, Gifts for Toddlers, Girls & Boys Ages 3, 4, 5, 6, 7, 8",
+      "description": "Introducing ‘Things I Can't See’ by Sam and Mi – A Unique Journey into Empathy!\n\nWhy is the lady happy? Why is the boy sad? Why are the parents worried? This unique book on empathy helps children recognize various emotions and discover the reasons behind them. It guides them to understand that sometimes the reasons may be obvious, while other times they might need to dig deeper to comprehend the causes. Empathy is considered one of the most important skills to create positive social change, enabling an understanding of problems, clear communication, and the development of collaborative relationships.\n\nWhy ‘Things I Can't See’ Story Book for Children is a Must-Have:\n\nEmpathy Book for Kids: Help your child explore emotions like happiness, sadness, and worry through this engaging children's book. Enhance empathy and understanding in kids with interactive storytelling.\n\nPerfect for Preschoolers: Tailored for ages 3-8, our children's book offers engaging content designed to captivate young minds and foster a love for learning.\n\nNurturing Vocabulary: Effortlessly introduce new words to your child, enriching their vocabulary and expanding their language skills.\n\nReturn Gifts for Kids: Whether for your own child or as thoughtful return gifts for a kids' birthday party, Sam and Mi children's books make a meaningful choice for kids.\n\nBonding Over Books: Create meaningful moments and deepen the bond between parents and children by sharing and reading Sam and Mi picture books.",
+      "catagory": "Kids",
+      "price": "199",
+      "language": "English",
+      "img_link": "https://m.media-amazon.com/images/I/81gwBIIQhEL._SY425_.jpg",
+      "buy_link": "https://www.amazon.in/Things-Cant-See-SAM-Recognize/dp/9354165974/ref=sr_1_2_sspa?adgrpid=59714592175&dib=eyJ2IjoiMSJ9.4FOFN9Ok-fKndOnMC0Vm0RaUQqxOjQH4y73GCqhmiOtJI6Kxn41ntaolPhtFgX5lA7LZdhE1jocDv1J9990sloMc58MLqqQlt1Qym1q8ngY5R02z8CvqeVJSrVnf_7ztYB3mftetRdZShdtsqU36BAz12FDbx38omG-v4ekb2w0atDfV1E5UN4tE1O1TdUcqwAxdsOf7AxppMGnBfQ8y0ZGh3AwyW4yllbWE3VLivgM.mWix6wCIoJC79Od8AzsZM5Pwu1yo6cHTzg5WJxYZSi4&dib_tag=se&ext_vrnc=hi&hvadid=297044673507&hvdev=c&hvlocphy=9061812&hvnetw=g&hvqmt=e&hvrand=1900126280601147221&hvtargid=kwd-854073957050&hydadcr=24926_1725244&keywords=story+books+for+kids+amazon&mcid=f3665f5896d035ad812f8354ab2ff6eb&qid=1737395165&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "review": []
+    },
+    {
+      "id": "6bb1",
+      "title": "Animals Tales From Panchtantra: Timeless Stories for Children From Ancient India",
+      "description": "Panchatantra has been a part of the Indian folklore for centuries and continues to enchant young readers even today. The Animal Tales from Panchatantra is a wonderful collection of six stories that aim to guide the young readers about being wise, understand human nature among other moral values. Vibrant and beautiful illustrations will allow the young readers to understand the story better and will encourage reading.",
+      "catagory": "Kids",
+      "price": "199",
+      "language": "English",
+      "img_link": "https://m.media-amazon.com/images/I/81WCSu2RoJS._SY425_.jpg",
+      "buy_link": "https://www.amazon.in/Animals-Tales-Panchtantra-Timeless-Children/dp/9389178118/ref=sr_1_4?adgrpid=59714592175&dib=eyJ2IjoiMSJ9.4FOFN9Ok-fKndOnMC0Vm0RaUQqxOjQH4y73GCqhmiOtJI6Kxn41ntaolPhtFgX5lA7LZdhE1jocDv1J9990sloMc58MLqqQlt1Qym1q8ngY5R02z8CvqeVJSrVnf_7ztYB3mftetRdZShdtsqU36BAz12FDbx38omG-v4ekb2w0atDfV1E5UN4tE1O1TdUcqwAxdsOf7AxppMGnBfQ8y0ZGh3AwyW4yllbWE3VLivgM.mWix6wCIoJC79Od8AzsZM5Pwu1yo6cHTzg5WJxYZSi4&dib_tag=se&ext_vrnc=hi&hvadid=297044673507&hvdev=c&hvlocphy=9061812&hvnetw=g&hvqmt=e&hvrand=1900126280601147221&hvtargid=kwd-854073957050&hydadcr=24926_1725244&keywords=story+books+for+kids+amazon&mcid=f3665f5896d035ad812f8354ab2ff6eb&qid=1737395165&sr=8-4",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "review": []
+    },
+    {
+      "id": "5039",
+      "title": "Grandma's Bag of Stories (R/J)",
+      "description": "Memories of a grandparent spinning tales around animals and mysterious characters have kept many of us rapt till date. Sudha Murty's Grandmas Bag of Stories is simply delightful. The story starts with Anand, Krishna, Raghu and Meena arriving at their grandparents house in Shiggaon. Overjoyed Ajji and Ajja(Grandmother and grandfather in Kannada) get the house ready, while Ajji prepares delicious snacks for children. Finally, times comes when everyone gathers around Ajji, as she opens her big bag of stories. She tells stories of kings and cheats, princesses and onions, monkeys and mice and scorpions and hidden treasures.\n\nthrough unlikely in combination, stories makes perfect sense when Grandma is the one narrating them. This book is ideal for young children and those who are 5+ in age. Stories are accompanied by colourful illustrations and morals. Lucid and simple language of the book, makes reading a pleasure.\n\nAbout the author:\nActive Indian social worker and writer, Sudha Murty was born 19th August 1950. She writes in two languages: Kannada and English. Sudha started her career in field of computer science and engineering. She is an active member in the Gate Foundation and the chairperson of a non-profit organization, Infosys Foundation in Karnataka. Credited for founding several orphanages, Sudha has also participated in various rural development efforts, to provide library and computer facilities in all Government schools of Karnataka. One of her many achievements includes establishing the 'The Murty Classical Library of India' at Harvard University. Apart from writing novels, she has also acted in films: Pitruroon (Marathi film) and Prarthana(Kannada film).",
+      "catagory": "Kids",
+      "price": "197",
+      "language": "English",
+      "img_link": "https://m.media-amazon.com/images/I/81ExT8sUebL._SY425_.jpg",
+      "buy_link": "https://www.amazon.in/Grandmas-Bag-Stories-Sudha-Murty/dp/0143333623/ref=lp_14142609031_1_1?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=J39EKNZ5QDB2KM679XSP&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "review": [],
+      "category": "mindset"
+    },
+    {
+      "id": "c0a2",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "description": "Escape to Hogwarts with the unmissable series that has sparked a lifelong reading journey for children and families all over the world. The magic starts here.Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. The magic starts here!These editions of the classic and internationally bestselling Harry Potter series feature thrilling jacket artwork by award-winning illustrator Jonny Duddle. They are the perfect starting point for anyone who's ready to lose themselves in the greatest children's story of all time.",
+      "catagory": "Kids",
+      "price": "381",
+      "language": "English",
+      "img_link": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg",
+      "buy_link": "https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling/dp/1408855658/ref=lp_14142609031_1_3?pf_rd_p=9e034799-55e2-4ab2-b0d0-eb42f95b2d05&pf_rd_r=J39EKNZ5QDB2KM679XSP&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "review": [],
+      "category": "mindset"
+    },
+    {
+      "id": "HEPsd8Nd-Ut7xUQP31pCc",
+      "title": "Start With Why",
+      "bookid": "bk105",
+      "description": "Learn how great leaders inspire everyone to take action. A must-read for entrepreneurs and leaders.",
+      "category": "Leadership",
+      "price": "500",
+      "img_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTE_wKw8hxoRbBl5EynI3wZuVs78OIKXQuA&s",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "language": "english",
+      "review": []
+    },
+    {
+      "id": "9f97",
+      "title": "Coding with JavaScript for Dummies  (English, Paperback, unknown)",
+      "description": "Coding with JavaScript for Dummies  (English, Paperback, unknown)",
+      "category": "Programming",
+      "price": "320",
+      "language": "bengali and english",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "img_link": "https://rukminim2.flixcart.com/image/612/612/book/6/6/3/coding-with-javascript-for-dummies-original-imaearmpmbe6bst5.jpeg?q=70"
+    },
+    {
+      "id": "60a8",
+      "title": "The Essence of Upanishads",
+      "bookid": "book22",
+      "description": "A deep dive into ancient Indian philosophy, focusing on the nature of self and the universe",
+      "category": "Hinduism",
+      "price": "200",
+      "img_link": "https://m.media-amazon.com/images/I/71TiyDDu-JL._AC_UF1000,1000_QL80_.jpg",
+      "author": "Amit Agarwal",
+      "publisher": "Liberty Publications",
+      "publish_year": "2022",
+      "copies_available": 12,
+      "isbn": "9789389931603",
+      "pages": 220,
+      "format": "Paperback",
+      "language": "bengali",
+      "review": []
+    }
+  ],
+  "admin": [
+    {
+      "id": "7950",
+      "name": "Joni Halder",
+      "email": "joni123@gmail.com",
+      "number": "1234567890",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "5C7PxNBIvC7XLD6FWRR1s",
+      "name": "abhijit",
+      "email": "abhijit@gmail.com",
+      "number": "1234567890",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "5C7PxNBIvC7XLD6FWRR1s",
+      "name": "abhijit",
+      "email": "abhijit@gmail.com",
+      "number": "1234567890",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "role": "admin"
+    }
+  ],
+  "users": [
+    {
+      "id": "vr8zZ9ILFjF02FBSBC5tv",
+      "name": "jonihalder",
+      "email": "jonihalder814@gmail.com",
+      "number": "7679178908",
+      "password": "76791789",
+      "confirmPassword": "76791789",
+      "registrationDate": "2025-05-26T11:06:20.341Z",
+      "role": "user"
+    },
+    {
+      "id": "f3zYzErGk-fqtRXwX6aKF",
+      "name": "coder",
+      "email": "coder@gmail.com",
+      "number": "9876543210",
+      "password": "1234567",
+      "confirmPassword": "1234567",
+      "registrationDate": "2025-05-26T18:26:05.440Z",
+      "role": "user"
+    },
+    {
+      "id": "8Eigbl2QELilzd9e-nryw",
+      "name": "anitosh halder",
+      "email": "anitosh@gmail.com",
+      "number": "0987654321",
+      "password": "12ddd11",
+      "confirmPassword": "12ddd11",
+      "registrationDate": "2025-05-26T18:26:41.013Z",
+      "role": "user"
+    },
+    {
+      "id": "jEIfS8-5A_AWL-Q5ywOfp",
+      "name": "my besite",
+      "email": "besite@gmail.com",
+      "number": "7679178908",
+      "password": "76791789",
+      "confirmPassword": "76791789",
+      "registrationDate": "2025-05-26T18:27:19.806Z",
+      "role": "user"
+    }
+  ]
+}

@@ -1,13 +1,62 @@
-# React + Vite
+# LMS Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Learning Management System (LMS) built using **React Toolkit**, **Tailwind CSS**, **Formik**, and **Yup** for form validation.  
+The project supports **Admin** and **User** authentication with role-based sidebar navigation and features.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Features
 
-## Expanding the ESLint configuration
+### Admin Dashboard Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# mylatestlibraymanagementsysltem
+The Admin panel provides comprehensive control over the platform, including:
+
+- **User Management**
+  - User List
+  - User Details
+  - User Actions
+- **Books Management**
+  - Books List
+  - Books Details
+  - Books Actions
+  - Books Uploads
+- **Instructor Management**
+  - Instructor List
+  - Instructor Details
+  - Instructor Actions
+- **Analytics & Reports**
+  - User Analytics
+  - Course Analytics
+  - Instructor Analytics
+  - Revenue Analytics
+  - Enrollment Analytics
+  - User Activity
+- **Payment Management**
+  - Payment History
+  - Refund Requests
+  - Payment Settings
+- **Notifications System**
+  - Send Notifications
+  - Notification History
+  - User Preferences
+  - Notification Templates
+- **CMS (Content Management System)**
+  - Manage Blog Posts
+  - Manage Categories
+  - Manage Tags
+
+### User Dashboard Features
+
+The User dashboard allows learners to manage their activities:
+
+- Dashboard (Overview)
+- Attendance Reports
+- My Profile
+- My Learning (Courses/Books)
+- Reports
+- Settings
+
+---
+##
+
+
