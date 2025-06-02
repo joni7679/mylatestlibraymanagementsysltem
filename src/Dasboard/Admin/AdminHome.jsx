@@ -15,9 +15,7 @@ function AdminHome() {
     let totalUsers = users?.length || 0;
     // total books
     let totalBooks = books?.length || 0;
-    // availableBooks
-    let availableBooks = books?.filter(book => book.copies_available).length || 0
-    // 
+
 
 
 
@@ -40,9 +38,14 @@ function AdminHome() {
                     <h2 className="text-xl font-bold text-green-700">Total Books</h2>
                     <p className="text-2xl">{totalBooks}</p>
                 </div>
-                <div className="bg-yellow-100 p-4 rounded shadow">
-                    <h2 className="text-xl font-bold text-orange-700">Available Books</h2>
-                    <p className="text-2xl">{availableBooks}</p>
+                <div className="bg-yellow-100 p-4 rounded shadow h-[10rem] overflow-auto">
+                    copies_available copy
+                    {books.map((book) => (
+                        <div key={book.id} className="bg-gray-100 rounded-lg p-4 mb-3 shadow">
+                            <h2 className="text-sm font-semibold text-gray-800">{book.title}</h2>
+                            <p className="text-gray-600">Copies Available: {book.copies_available || 0}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

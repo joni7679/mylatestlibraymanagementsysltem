@@ -15,7 +15,7 @@ export const fetchIngBooks = createAsyncThunk("books/fetchIngBooks", async () =>
 export const updateBookCopies = createAsyncThunk("books/updateBookCopies", async (bookid, Copy) => {
     try {
 
-        
+
     } catch (error) {
         return console.log("Fetching problem, please try again...");
 
@@ -40,6 +40,8 @@ export const booksSlice = createSlice({
             state.books = state.books.filter(book => book.id !== action.payload);
         },
         addReview: (state, action) => {
+            state.books = state.books.find(book => book.id !== action.payload.id)
+            
 
         },
 
