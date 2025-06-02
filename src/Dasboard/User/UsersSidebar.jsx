@@ -7,7 +7,7 @@ import { retry } from '@reduxjs/toolkit/query';
 function UsersSidebar() {
     return (
         <>
-            <div className="h-screen w-64 bg-gray-900 shadow-md p-5 flex flex-col">
+            <div className="h-screen w-64 bg-gray-900 shadow-md p-5 flex flex-col absolute">
 
                 <div className="flex items-center gap-3 mb-8">
                     <FaBookOpen className="text-orange-500 text-3xl" />

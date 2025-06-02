@@ -11,7 +11,16 @@ export const fetchIngBooks = createAsyncThunk("books/fetchIngBooks", async () =>
     }
 });
 
+// updte book copys
+export const updateBookCopies = createAsyncThunk("books/updateBookCopies", async (bookid, Copy) => {
+    try {
 
+        
+    } catch (error) {
+        return console.log("Fetching problem, please try again...");
+
+    }
+})
 
 const initialState = {
     books: [],
@@ -33,14 +42,6 @@ export const booksSlice = createSlice({
         addReview: (state, action) => {
 
         },
-        decrementCopy: (state, action) => {
-            const bookId = action.payload;
-            const book = state.books.find(book => book.id === action.payload.id);
-            if (book && book.copies_available > 0) {
-                book.copies_available -= 1;
-            }
-
-        }
 
     },
     extraReducers: (builder) => {

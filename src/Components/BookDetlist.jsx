@@ -54,10 +54,18 @@ function BookDetlist() {
     // availablenow logic here
     const availablenow = (bookid, copy) => {
         if (isLogined) {
-            dispatch(decrementCopy(bookid, copy));
-            toast.success(`Dear ${currentUser.name} Book copy available now plz Check your Dasboard`);
+            if (copy > 0) {
+                dispatch(decrementCopy(bookid, copy))
+                toast.success(`Dear ${currentUser.name} Book copy available now plz Check your Dasboard`);
 
-        } else {
+            }
+            else {
+                toast.warning("Sorry, this book is out of stock.");
+            }
+
+        }
+
+        else {
             toast.warning("Login First.....");
             setTimeout(() => {
                 navigate("/login");
