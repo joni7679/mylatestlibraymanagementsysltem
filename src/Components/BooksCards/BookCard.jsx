@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchIngBooks } from "../../Reducx/BooksSlice";
+import { BiIdCard } from "react-icons/bi";
 
 const BookCard = ({ searchQuery }) => {
   const dispatch = useDispatch();
@@ -24,6 +25,16 @@ const BookCard = ({ searchQuery }) => {
     book?.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     book?.id.toString().includes(searchQuery)
   );
+
+  // availableCopy logic here
+  let availableCopy = (bookid, copies) => {
+
+    console.log("bookid", bookid, "copy", copies);
+    let newAvailableCopy = copies - 1;
+    console.log(newAvailableCopy);
+
+
+  }
 
   return (
     <div className="w-full px-6 grid md:grid-cols-3  sm:grid-cols-2 gap-6">
@@ -56,6 +67,10 @@ const BookCard = ({ searchQuery }) => {
             >
               Read More
             </Link>
+            <button onClick={() => availableCopy(book.id, book.copies_available)}>
+              {book.copies_available}
+            </button>
+
           </div>
 
         </div>

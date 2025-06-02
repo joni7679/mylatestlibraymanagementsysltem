@@ -6,17 +6,21 @@ export const SignupSchema = Yup.object({
     number: Yup.string()
         .matches(/^[0-9]{10}$/, 'Phone number must be 10 digits')
         .required('Phone number is required'),
-    password: Yup.string().min(6, 'Password must be at least 6 characters').required('Password is required').max(20),
+    password: Yup.string().min(6, 'Password must be at least 6 characters').required('Password is required').max(20)
+        .matches(/[A-Z]/g, "Must include uppercase letter")
+        .matches(/[a-z]/g, "Must include lowercase letter")
+        .matches(/[0-9]/g, "Must include a number")
+        .matches(/[@$!%*?&]/g, "Must include special character"),
+
     confirmPassword: Yup.string()
-        .oneOf([Yup.ref('password'), null], 'Passwords must match') 
+        .oneOf([Yup.ref('password'), null], 'Passwords must match')
         .required('Confirm Password is required'),
 });
 
 
 export const Loginschema = Yup.object({
     email: Yup.string().email('Invalid email format').required('Email is required'),
-    password: Yup.string().required('Password is required').min(6, 'Password too short')
-
+    password: Yup.string().required('Password is required').min(6, 'Password too short'),
 })
 
 export const ContactSchema = Yup.object({

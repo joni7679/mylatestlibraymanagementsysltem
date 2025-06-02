@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { deleteUserData } from "../../Reducx/UserSlice";
 import { toast, ToastContainer } from "react-toastify";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import usePasswordConfirmation from "../../Hooks/usePasswordConfirmation";
 
 function UserDetails() {
     const { id } = useParams();
@@ -13,6 +14,8 @@ function UserDetails() {
     const togglePasswordVisibility = () => {
         setVisiblePassword(!visiblepasword);
     }
+    let { requestPasswordCheck, PasswordModalComponent } = usePasswordConfirmation()
+
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
     console.log("your user id is", id);
@@ -57,6 +60,7 @@ function UserDetails() {
             <ToastContainer />
             <div className="p-4 shadow-2xl bg-gray-950 text-white rounded-lg mt-5 relative">
                 <MdOutlineDelete onClick={() => deleteUser(user.id)} className="text-xl cursor-pointer absolute right-5" />
+                <h2 className="text-xl font-bold">UserId : {user.id}</h2>
                 <h2 className="text-xl font-bold">Name : {user.name}</h2>
                 <p>Email: {user.email}</p>
                 <p>Phone: {user.number}</p>

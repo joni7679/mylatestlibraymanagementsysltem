@@ -25,10 +25,11 @@ import BooksTable from "../Dasboard/Admin/BooksTable";
 import BookDetailsContainer from "../Dasboard/Admin/BookDetailsContainer";
 import Addbooks from "../Dasboard/Admin/Addbooks";
 import EditBook from "../Dasboard/Admin/EditBook";
+import App from "../App";
 export let router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <App />,
   },
   {
     path: "/about",
@@ -85,7 +86,7 @@ export let router = createBrowserRouter([
         )
       },
       {
-        path: "/admin/admin",
+        path: "/admin",
         element: (
           <AdminProtectedRoute>
             <AdminHome />

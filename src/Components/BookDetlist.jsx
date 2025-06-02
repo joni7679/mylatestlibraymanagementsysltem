@@ -7,11 +7,14 @@ import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 import CustomerReviewSlider from './CustomerReviewSlider';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import Login from '../Pages/Login/Login';
+import { toast, ToastContainer } from 'react-toastify';
+import { decrementCopy } from '../Reducx/BooksSlice';
 
 function BookDetlist() {
+    let dispatch = useDispatch();
     let navigate = useNavigate();
     let { user, error, isLoading, currentUser, isLogined } = useSelector((state) => state.user)
 
@@ -36,6 +39,7 @@ function BookDetlist() {
 
 
 
+
     if (loading) {
         return <p className="text-center py-20 text-xl font-semibold">Loading book details...</p>;
     }
@@ -47,9 +51,23 @@ function BookDetlist() {
             navigate(`/login`)
         }
     }
+    // availablenow logic here
+    const availablenow = (bookid, copy) => {
+        if (isLogined) {
+            dispatch(decrementCopy(bookid, copy));
+            toast.success(`Dear ${currentUser.name} Book copy available now plz Check your Dasboard`);
+
+        } else {
+            toast.warning("Login First.....");
+            setTimeout(() => {
+                navigate("/login");
+            }, 1000);
+        }
+    }
 
     return (
         <>
+            <ToastContainer />
             <Navbar />
             <div className='bg-[#F7F5F3]'>
                 <div className="container mx-auto flex justify-center items-center p-6">
@@ -96,8 +114,8 @@ function BookDetlist() {
                                 <button className="flex items-center gap-2 bg-[#FF6900] text-[#1E1E1E] px-6 py-2 rounded-full font-medium">
                                     <CgShoppingCart className='text-xl' /> BUY IT NOW
                                 </button>
-                                <button className="flex items-center gap-2 bg-[#FF6900] text-[#1E1E1E] px-6 py-2 rounded-full font-medium">
-                                    Order NOW
+                                <button onClick={() => availablenow(book.id, book.copies_available)} className="flex items-center capitalize cursor-pointer gap-2 bg-[#FF6900] text-[#1E1E1E] hover:bg-orange-600 px-6 py-2 rounded-full font-medium">
+                                    {book.copies_available > 0 ? "Available Now" : "Out of Stock"}
                                 </button>
                             </div>
 

@@ -10,8 +10,17 @@ function Addbooks() {
     let dispatch = useDispatch();
     const [errors, setErrors] = useState({});
     const [addbook, setbookData] = useState({
+
         title: "",
         bookid: "",
+        author: "",
+        available: "",
+        publisher: "",
+        publish_year: "",
+        copies_available: "",
+        isbn: "",
+        pages: "",
+        format: "",
         description: "",
         category: "",
         price: "",

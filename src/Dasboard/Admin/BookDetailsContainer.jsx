@@ -26,10 +26,10 @@ function BookDetailsContainer() {
   }
   const handleDeleteUser = (userId) => {
     console.log("delete user", userId);
-    // let confirm = window.confirm("Are you sure you want to delete this user?");
-    // if (confirm) {
-    //   dispatch(deleteUserData(userId))
-    // }
+    let confirm = window.confirm("Are you sure you want to delete this user?");
+    if (confirm) {
+      dispatch(deleteUserData(userId))
+    }
   }
   return (
     <>
@@ -42,9 +42,29 @@ function BookDetailsContainer() {
               {book.category}
             </span>
             <p className="text-gray-600 leading-relaxed text-sm">{book.description}</p>
-            <button className="px-6 py-2 border rounded-full text-gray-800 font-medium">
-              {book.language}
-            </button>
+            <div className="flex flex-wrap gap-3">
+              <button className="px-4 py-2 border rounded-full text-gray-700 bg-gray-100 text-sm font-medium">
+                Language: {book.language}
+              </button>
+              <button className="px-4 py-2 border rounded-full text-gray-700 bg-gray-100 text-sm font-medium">
+                Author: {book.author}
+              </button>
+              <button className="px-4 py-2 border rounded-full text-gray-700 bg-gray-100 text-sm font-medium">
+                Publisher: {book.publisher}
+              </button>
+              <button className="px-4 py-2 border rounded-full text-gray-700 bg-gray-100 text-sm font-medium">
+                Copies: {book.copies_available}
+              </button>
+              <button className="px-4 py-2 border rounded-full text-gray-700 bg-gray-100 text-sm font-medium">
+                ISBN: {book.isbn}
+              </button>
+              <button className="px-4 py-2 border rounded-full text-gray-700 bg-gray-100 text-sm font-medium">
+                Pages: {book.pages}
+              </button>
+              <button className="px-4 py-2 border rounded-full text-gray-700 bg-gray-100 text-sm font-medium">
+                Format: {book.format}
+              </button>
+            </div>
             <p className="text-2xl font-bold text-[#1E1E1E]">₹{book.price}</p>
           </div>
 

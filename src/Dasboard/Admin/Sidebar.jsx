@@ -14,15 +14,15 @@ const Sidebar = () => {
     };
 
     return (
-        <div className="h-screen bg-gray-900 shadow-md p-5 flex flex-col overflow-y-auto w-[18rem]">
+        <div className="h-screen bg-gray-900 shadow-md p-5 flex flex-col overflow-y-auto w-[18rem] left-part">
             <div className="flex items-center gap-3 mb-8">
                 <FaBookOpen className="text-orange-500 text-3xl" />
-                <h1 className="text-xl font-semibold text-white">SkillSet</h1>
+                <Link to={`/admin`} className="text-xl font-semibold text-white">SkillSet</Link>
             </div>
             <ul className="space-y-4">
                 {adminDashboardFeatures.map((item, index) => (
                     <li key={index} className="relative">
-                     
+
                         <button
                             onClick={() => toggleMenu(index)}
                             className="w-full flex items-center justify-between gap-3 cursor-pointer hover:bg-gray-950 p-2 rounded text-gray-100 hover:text-orange-500"
@@ -34,7 +34,7 @@ const Sidebar = () => {
                             {openMenus[index] ? <IoIosArrowDown /> : <IoIosArrowUp />}
                         </button>
 
-                       
+
                         <ul className={`${openMenus[index] ? "block" : "hidden"} ml-6 mt-2 space-y-2`}>
                             {item?.features?.map((feature, featureIndex) => (
                                 <li key={featureIndex}>

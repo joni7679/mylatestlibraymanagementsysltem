@@ -1,19 +1,23 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { fetchIngBooks } from '../../Reducx/BooksSlice';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import { GrView } from 'react-icons/gr';
+import usePasswordConfirmation from '../../Hooks/usePasswordConfirmation';
 
 function BooksTable() {
     const { books, isLoading, error } = useSelector((state) => state.books);
     let dispatch = useDispatch();
     let navigate = useNavigate();
+    let { requestPasswordCheck, PasswordModalComponent } = usePasswordConfirmation()
 
     // handle books details
     let handleBookDetails = (book) => {
         navigate(`/admin/bookDetails/${book}?title=${encodeURIComponent(book.title)}`)
     }
+
+    // visiable password logic
 
 
 

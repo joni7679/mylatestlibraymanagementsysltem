@@ -31,8 +31,16 @@ export const booksSlice = createSlice({
             state.books = state.books.filter(book => book.id !== action.payload);
         },
         addReview: (state, action) => {
-          
+
         },
+        decrementCopy: (state, action) => {
+            const bookId = action.payload;
+            const book = state.books.find(book => book.id === action.payload.id);
+            if (book && book.copies_available > 0) {
+                book.copies_available -= 1;
+            }
+
+        }
 
     },
     extraReducers: (builder) => {
@@ -54,5 +62,5 @@ export const booksSlice = createSlice({
 });
 
 
-export const { addBooks, removeBook, addReview } = booksSlice.actions;
+export const { addBooks, removeBook, addReview, decrementCopy } = booksSlice.actions;
 export default booksSlice.reducer;

@@ -1,15 +1,20 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { addusers, fetchUserData } from "../../Reducx/UserSlice";
-import { addAdmin } from "../../Reducx/AdminSlice";
+import { addAdmin, fetchAdminData } from "../../Reducx/AdminSlice";
 import axios from "axios";
 import { nanoid } from "@reduxjs/toolkit";
+import usePasswordConfirmation from "../../Hooks/usePasswordConfirmation";
+
 
 function AddStudents() {
+    let { requestPasswordCheck, PasswordModalComponent } = usePasswordConfirmation()
+    let { admin, isLogined, currentAdmin } = useSelector((state) => state.admin);
+    console.log("admin data", isLogined, currentAdmin);
     let dispatch = useDispatch();
     let navigate = useNavigate();
     const [formData, setformData] = useState({
@@ -19,8 +24,12 @@ function AddStudents() {
         number: "",
         password: "",
         confirmPassword: "",
+        registrationDate: new Date().toISOString(),
         role: "select-role",
     });
+
+    // uses
+    useEffect(() => { dispatch(fetchAdminData()) }, [])
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -52,7 +61,7 @@ function AddStudents() {
             return;
         }
 
-        if (number.length <= 10 ) {
+        if (number.length < 10) {
             toast.error("Number must be at least 10 digits long");
             return;
         }
@@ -85,6 +94,7 @@ function AddStudents() {
                     number: "",
                     password: "",
                     confirmPassword: "",
+                    registrationDate: "",
                     role: "",
                 }
             } catch (error) {

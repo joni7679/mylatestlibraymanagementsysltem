@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import { fetchIngBooks } from '../../Reducx/BooksSlice';
 import { toast, ToastContainer } from 'react-toastify';
+import { fetchAdminData } from '../../Reducx/AdminSlice';
+import usePasswordConfirmation from '../../Hooks/usePasswordConfirmation';
+
 
 function EditBook() {
     let dispatch = useDispatch();
@@ -15,39 +18,65 @@ function EditBook() {
     console.log("books data", books);
     console.log("bookid", bookid);
     console.log(books);
-
-
+    // admin data
+    let { admin, isLogined, currentAdmin } = useSelector((state) => state.admin);
+    console.log("admin data", isLogined, currentAdmin);
+    let { requestPasswordCheck, PasswordModalComponent } = usePasswordConfirmation()
     // find book by id 
     const book = books.find((book) => book.id.toString() === bookid)
+
     console.log("edit book data", book)
 
-    // updateForm
-    const updateForm = async (e) => {
+    // update book data logic here.....
+    const updateForm = (e) => {
         e.preventDefault();
-        const updatedBook = {
-            id: bookid,
-            title: bookdata.title,
-            description: bookdata.description,
-            category: bookdata.category,
-            price: bookdata.price,
-            language: bookdata.language,
-            img_link: bookdata.img_link
-        }
-        console.log("Updated Book Data:", updatedBook);
-        // send updated book data to server
-        try {
-            let response = await axios.patch(`http://localhost:3000/books/${bookid}`, updatedBook);
-            console.log(response.data);
-            toast.success("Book updated successfully");
-            setTimeout(() => {
-                navigate('/admin/bookstable');
-            }, 100);
-            dispatch(fetchIngBooks(response.data));
 
-        } catch (error) {
-            console.error("Error updating book:", error);
-        }
+        // const inputPassword = window.prompt("Plz Enter your password to confirm");
+        // if (!inputPassword) {
+        //     toast.error("Password is required");
+        //     return;
+        // }
+
+        // if (inputPassword !== currentAdmin.password) {
+        //     toast.error("Wrong password! Update cancelled.");
+        //     return;
+        // }
+        requestPasswordCheck(async () => {
+            if (!bookdata.title || !bookdata.description || !bookdata.category || !bookdata.price || !bookdata.language || !bookdata.img_link) {
+                toast.error("Please fill in all fields");
+                return;
+            }
+            
+            const updatedBook = {
+                id: bookid,
+                title: bookdata.title,
+                description: bookdata.description,
+                category: bookdata.category,
+                price: bookdata.price,
+                language: bookdata.language,
+                img_link: bookdata.img_link
+            }
+
+            try {
+                let response = await axios.patch(`http://localhost:3000/books/${bookid}`, updatedBook);
+                console.log(response.data);
+                toast.success("Book updated successfully");
+                setTimeout(() => {
+                    navigate('/admin/bookstable');
+                }, 10);
+
+                dispatch(fetchIngBooks(response.data));
+
+            } catch (error) {
+                console.error("Error updating book:", error);
+                toast.error("Failed to update book.");
+            }
+        })
+
+
     }
+
+
 
     useEffect(() => {
         if (book) {
@@ -59,6 +88,7 @@ function EditBook() {
     useEffect(() => {
         dispatch(fetchIngBooks())
     }, [dispatch])
+    useEffect(() => { dispatch(fetchAdminData()) }, [])
     if (isLoading) {
         return <h1>Loading........</h1>
     }
@@ -67,7 +97,9 @@ function EditBook() {
     }
     return (
         <>
-            <ToastContainer />
+
+            <ToastContainer position="top-center" autoClose={2000} />
+            <PasswordModalComponent />
             <div className="w-[80%] mx-auto p-6 bg-gray-900 shadow-lg rounded-xl mt-10">
                 <h2 className="text-2xl font-bold mb-6 text-center text-white">Edit Book</h2>
                 <form className="space-y-4" onSubmit={updateForm} autoComplete="off">

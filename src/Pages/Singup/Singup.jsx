@@ -21,7 +21,10 @@ const initialValues = {
 };
 
 function Signup() {
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState({
+    userpassword: false,
+    confirmPassword: false,
+  });
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -44,7 +47,7 @@ function Signup() {
         number: values.number,
         password: values.password,
         confirmPassword: values.confirmPassword,
-        registrationDate: new Date().toISOString(), 
+        registrationDate: new Date().toISOString(),
         role: "user"
       };
 
@@ -133,7 +136,7 @@ function Signup() {
             <div className="mb-6 relative">
               <label htmlFor="password" className="block text-gray-700 font-medium mb-2">Password</label>
               <input
-                type={showPassword ? 'text' : 'password'}
+                type={showPassword.userpassword ? 'text' : 'password'}
                 id="password"
                 name="password"
                 placeholder="Password..."
@@ -142,27 +145,28 @@ function Signup() {
                 onBlur={handleBlur}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              {showPassword ? (
+              {showPassword.userpassword ? (
                 <FaRegEye
-                  onClick={() => setShowPassword(!showPassword)}
+                  onClick={() => setShowPassword({ ...showPassword, userpassword: false })}
                   className="text-xl absolute right-2 top-11 cursor-pointer"
                 />
               ) : (
                 <FaRegEyeSlash
-                  onClick={() => setShowPassword(!showPassword)}
+                  onClick={() => setShowPassword({ ...showPassword, userpassword: true })}
                   className="text-xl absolute right-2 top-11 cursor-pointer"
                 />
               )}
+
               {errors.password && touched.password && (
                 <p className="text-red-500 text-sm mt-1">{errors.password}</p>
               )}
             </div>
 
 
-            <div className="mb-6">
+            <div className="mb-6 relative">
               <label htmlFor="confirmPassword" className="block text-gray-700 font-medium mb-2">Confirm Password</label>
               <input
-                type={showPassword ? 'text' : 'password'}
+                type={showPassword.confirmPassword ? 'text' : 'password'}
                 id="confirmPassword"
                 name="confirmPassword"
                 placeholder="Confirm Password..."
@@ -171,6 +175,20 @@ function Signup() {
                 onBlur={handleBlur}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
+              {showPassword.confirmPassword ? (
+                <FaRegEye
+                  onClick={() => setShowPassword({ ...showPassword, confirmPassword: false })}
+                  className="text-xl absolute right-2 top-11 cursor-pointer"
+                />
+              ) : (
+                <FaRegEyeSlash
+                  onClick={() => setShowPassword({ ...showPassword, confirmPassword: true })}
+                  className="text-xl absolute right-2 top-11 cursor-pointer"
+                />
+              )}
+              {errors.password && touched.password && (
+                <p className="text-red-500 text-sm mt-1">{errors.password}</p>
+              )}
               {errors.confirmPassword && touched.confirmPassword && (
                 <p className="text-red-500 text-sm mt-1">{errors.confirmPassword}</p>
               )}

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { fetchUsers, loginFetchData, logOut } from '../../Reducx/UserSlice';
@@ -8,12 +8,18 @@ import { LuLogOut } from 'react-icons/lu';
 import { MdDashboard } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
 import { logOutAdmin } from '../../Reducx/AdminSlice';
+import { CiMenuFries } from 'react-icons/ci';
+import { navlink } from '../../constants/navlinks';
+import { RxCross1 } from 'react-icons/rx';
 
 
 function Navbar() {
     let dispatch = useDispatch();
     let { error, isLoading, currentUser, isLogined } = useSelector((state) => state.user)
     let { admin, currentAdmin } = useSelector((state) => state.admin);
+
+    const [isOpen, setIsOpen] = useState(false)
+
     useEffect(() => {
         dispatch(fetchUsers())
     }, [dispatch])
@@ -38,24 +44,28 @@ function Navbar() {
             }, 100)
         }
     }
+
     return (
 
         <>
             <ToastContainer />
-            <div className="w-full  bg-gray-800 ">
-                <nav className='navbar container mx-auto  flex items-center justify-between flex-wrap py-5 px-6 md:px-12 '>
+            <div className="w-full relative  bg-gray-800 flex items-center py-5 px-6">
+                <nav className={`navbar responsivenavbar container mx-auto  flex items-center justify-between flex-wrap  md:px-12  ${isOpen ? "activenav" : ""}`}>
                     <Link to={`/`} className="logo text-white flex items-center gap-1"> <BiLibrary className='text-xl ' />Lms</Link>
                     <div className="center-nav flex items-center justify-between w-[50%]">
-                        <Link to={`/`} className=' mr-[20px] text-white ' >Home</Link>
-                        <Link to={`/books`} className=' mr-[20px] text-white ' >Books</Link>
-                        <Link to={`/about`} className=' mr-[20px] text-white ' >About As</Link>
-                        <Link to={`/contact`} className=' mr-[20px] text-white ' >Contact</Link>
+                        {
+                            navlink.map((val, index) => {
+                                return (
+                                    <Link key={index} to={val.path} className='nav-item mr-[20px] text-white ' >{val.name}</Link>
+                                )
+                            })
+                        }
                     </div>
 
                     {
                         currentAdmin ? (
 
-                            <div className="relative group w-16 h-16">
+                            <div className="relative group w-16 h-16 admin">
                                 <div className="w-full h-full rounded-full overflow-hidden border-2 border-gray-300 shadow-md cursor-pointer">
                                     <img
                                         src="https://i.pravatar.cc/150?img=1"
@@ -79,7 +89,7 @@ function Navbar() {
                             </div>
                         ) : isLogined ? (
 
-                            <div className="relative group w-16 h-16">
+                            <div className="relative group w-16 h-16 user">
                                 <div className="w-full h-full rounded-full overflow-hidden border-2 border-gray-300 shadow-md cursor-pointer">
                                     <img
                                         src="https://i.pravatar.cc/150?img=3"
@@ -115,6 +125,16 @@ function Navbar() {
                     }
 
                 </nav >
+                <span className='toggle hidden' onClick={() => setIsOpen(!isOpen)}>
+                    {
+                        isOpen ? (
+                            <RxCross1 className='text-2xl text-white inline-block cursor-pointer' />
+                        ) : (
+                            <CiMenuFries className='text-2xl text-white inline-block cursor-pointer' />
+                        )
+                    }
+
+                </span>
             </div >
 
         </>

@@ -4,8 +4,51 @@
     color: rgb(232, 40, 40);
 }
 
+body {
+    overflow-x: hidden;
+}
 
+.left-part::-webkit-scrollbar {
+    display: none;
+}
 
 .right-part::-webkit-scrollbar {
     display: none;
+}
+
+@media (max-width:850px) {
+    .toggle {
+        display: block;
+    }
+
+    .responsivenavbar {
+        justify-content: center;
+        gap: 20px;
+        position: absolute;
+        width: 112%;
+        height: 86vh;
+        background: #1E2939;
+        flex-direction: column;
+        top: 4%;
+        left: 100%;
+        z-index: 99;
+        transition: all 0.5s;
+
+    }
+
+
+
+    .center-nav {
+        flex-direction: column;
+
+    }
+
+    .center-nav .nav-item {
+        margin-top: 20px;
+    }
+
+    .activenav {
+        left: 14%;
+        transition: all 0.5s;
+    }
 }
