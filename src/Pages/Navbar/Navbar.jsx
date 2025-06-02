@@ -102,7 +102,7 @@ function Navbar() {
                                         <CgProfile className="text-lg mr-2 inline-block" />
                                         My Profile
                                     </Link>
-                                    <Link to={`/user`} className="text-gray-700 text-sm font-medium p-2 rounded-lg hover:bg-gray-100 cursor-pointer transition">
+                                    <Link to={`/user/dasboard`} className="text-gray-700 text-sm font-medium p-2 rounded-lg hover:bg-gray-100 cursor-pointer transition">
                                         <MdDashboard className='inline-block mr-2' />
                                         Dashboard
                                     </Link>

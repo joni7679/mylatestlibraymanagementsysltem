@@ -20,7 +20,7 @@ function UsersSidebar() {
                             <Link
                                 key={index}
                                 to={val.path}
-                                className="flex items-center hover:bg-gray-950 p-2 rounded gap-3 text-gray-100 hover:text-orange-500 cursor-pointer"
+                                className="flex items-center hover:bg-gray-950 p-2 rounded gap-3 text-gray-100 hover:text-orange-500 cursor-pointer " 
                             >
                                 <Icon />
                                 {val.name}

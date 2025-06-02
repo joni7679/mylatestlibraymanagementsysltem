@@ -149,15 +149,6 @@ export let router = createBrowserRouter([
         path: "/admin/payments",
         element: <h1>payments</h1>
       },
-      {
-        path: "/admin/addbooks",
-        element: <h1>Add Books</h1>,
-      },
-
-      {
-        path: "/admin/editbooks",
-        element: <h1>Edit Books</h1>,
-      }
     ],
   }
   ,
